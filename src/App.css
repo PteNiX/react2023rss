@@ -5,6 +5,17 @@
   text-align: center;
 }
 
+.header {
+  background-color: red;
+  height: 30px;
+  width: 100%;
+}
+
+.button {
+  background-color: blue;
+  height: 10px;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
