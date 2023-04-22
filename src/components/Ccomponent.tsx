@@ -13,7 +13,7 @@ export default class Ccomponent extends Component {
           <BrowserRouter>
             <Routes>
               <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="*" element={<Page404 />} />
               </Route>
