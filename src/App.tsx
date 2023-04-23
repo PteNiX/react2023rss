@@ -2,7 +2,6 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import "./App.css";
-import { HashRouter } from "react-router-dom";
 
 /* import { Link } from "react-router-dom"; */
 /* import Fcomponent from "./components/Fcomponent";
@@ -15,9 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <HashRouter>
-        <Ccomponent />
-      </HashRouter>
+      <Ccomponent />
       {
         <>
           <div>

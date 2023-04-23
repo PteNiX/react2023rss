@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes, HashRouter } from "react-router-dom";
 import Page404 from "../pages/Page404";
 import AboutUs from "../pages/AboutUs";
 import Home from "../pages/Home";
@@ -10,7 +10,7 @@ export default class Ccomponent extends Component {
     return (
       <div>
         {
-          <BrowserRouter>
+          <HashRouter>
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route path="/home" element={<Home />} />
@@ -18,7 +18,7 @@ export default class Ccomponent extends Component {
                 <Route path="*" element={<Page404 />} />
               </Route>
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         }
       </div>
     );
