@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import "./App.css";
+import { HashRouter } from "react-router-dom";
 
 /* import { Link } from "react-router-dom"; */
 /* import Fcomponent from "./components/Fcomponent";
@@ -14,18 +15,9 @@ function App() {
 
   return (
     <div className="App">
-      {/*       {
-        <div>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/home" element={<Home />} />
-              <Route path="/about" element={<AboutUs />} />
-              <Route path="*" element={<Page404 />} />
-            </Routes>
-          </BrowserRouter>
-        </div>
-      } */}
-      <Ccomponent />
+      <HashRouter>
+        <Ccomponent />
+      </HashRouter>
       {
         <>
           <div>
