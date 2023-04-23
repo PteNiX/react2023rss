@@ -1,6 +1,6 @@
-import { useState } from "react";
+/* import { useState } from "react";
 import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
+import viteLogo from "./assets/vite.svg"; */
 import "./App.css";
 
 /* import { Link } from "react-router-dom"; */
@@ -10,12 +10,12 @@ import Acomponent from "./components/Acomponent"; */
 import Ccomponent from "./components/Ccomponent";
 
 function App() {
-  const [count, setCount] = useState(0);
+  /* const [count, setCount] = useState(0); */
 
   return (
     <div className="App">
       <Ccomponent />
-      {
+      {/*  {
         <>
           <div>
             <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
@@ -36,7 +36,7 @@ function App() {
             </button>
           </div>
         </>
-      }
+      } */}
     </div>
   );
 }
