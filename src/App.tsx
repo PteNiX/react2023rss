@@ -3,10 +3,6 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg"; */
 import "./App.css";
 
-/* import { Link } from "react-router-dom"; */
-/* import Fcomponent from "./components/Fcomponent";
-import Ccomponent from "./components/Ccomponent";
-import Acomponent from "./components/Acomponent"; */
 import Ccomponent from "./components/Ccomponent";
 
 function App() {

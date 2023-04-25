@@ -1,0 +1,13 @@
+.nav {
+  position: relative;
+  width: 180px;
+  display: flex;
+  margin: auto;
+}
+
+.nav-con {
+  width: 180px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
