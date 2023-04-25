@@ -5,6 +5,7 @@ import "./Home.css";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let data: any[];
 
+// get api
 export const Home = () => {
   const [countries, setCountries] = useState([]);
   const getCountries = async () => {
@@ -17,8 +18,14 @@ export const Home = () => {
     void getCountries();
   }, []);
 
+  // filter array
+  const [value, setValue] = useState("");
+  const filteredCountries = countries.filter((country) => {
+    return country.name.common.toLowerCase().includes(value.toLowerCase());
+  });
+
   // eslint-disable-next-line react/jsx-key
-  const listItems = countries?.map((number) => (
+  const listItems = filteredCountries?.map((number) => (
     <div className="card" key={number.cca2}>
       <img className="img-flag" key={number.cca2} src={number.flags.png} />
       <div className="name-flag" key={number.cca3}>
@@ -34,7 +41,7 @@ export const Home = () => {
           type="text"
           name="name"
           onChange={(event) => {
-            console.log(event.target.value);
+            setValue(event.target.value);
             localStorage.setItem("input", event.target.value);
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             data = countries?.filter((e) => e.region === "Europe");
