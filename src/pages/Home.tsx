@@ -16,12 +16,12 @@ export const Home = () => {
 
   // filter array
   const [value, setValue] = useState("");
-  const filteredCountries = countries.filter((country) => {
+  const filteredCountries = countries.filter((country: any) => {
     return country.name.common.toLowerCase().includes(value.toLowerCase());
   });
 
   // eslint-disable-next-line react/jsx-key
-  const listItems = filteredCountries?.map((number) => (
+  const listItems = filteredCountries?.map((number: any) => (
     <div className="card" key={number.cca2}>
       <img className="img-flag" key={number.cca2} src={number.flags.png} />
       <div className="name-flag" key={number.cca3}>
