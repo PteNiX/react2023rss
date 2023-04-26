@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Routes, HashRouter } from "react-router-dom";
+import { Route, Routes, HashRouter, Navigate } from "react-router-dom";
 import Page404 from "../pages/Page404";
 import AboutUs from "../pages/AboutUs";
 import Home from "../pages/Home";
@@ -16,6 +16,7 @@ export default class Ccomponent extends Component {
                 <Route path="/home" element={<Home />} />
                 <Route path="/about" element={<AboutUs />} />
                 <Route path="*" element={<Page404 />} />
+                <Route index element={<Navigate to="/home" replace />} />
               </Route>
             </Routes>
           </HashRouter>
