@@ -13,6 +13,9 @@ export const Layout = () => {
             <Link to="/about">About</Link>
           </span>
           <span>
+            <Link to="/form">Form</Link>
+          </span>
+          <span>
             <Link to="/404">NoPage</Link>
           </span>
         </div>
